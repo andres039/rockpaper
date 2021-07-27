@@ -31,10 +31,11 @@ h2 {
 #userOptions {  
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-end;
+    align-self: center;
     justify-content: center;
     gap: 3rem;
-    margin-block: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
 }
 button {
     height: 10vh;
@@ -54,6 +55,8 @@ p {
     color: wheat;
 }
 #veridict {
+    justify-self: left;
     color: fuchsia;
-    
+    margin: 6rem;
+
 }
