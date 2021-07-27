@@ -3,8 +3,8 @@
     padding: 0;
 }
 body {
+    line-height: 1.6;
     display: grid;
-    grid-template-rows: 1fr 2fr 3fr;
     background-image: url(background2.jpg);
     background-repeat: no-repeat;
     height: 100vh;
@@ -14,28 +14,46 @@ body {
     background-color: black;
 }
 header {
-    height: 20vh;
     display: flex;
-    flex-flow: row-wrap;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-self: center;
     justify-content: center;
-    grid-row-start: 1;
+    max-width: 40vw;
+    margin-block-end: 1rem;
 }
-h1, h2 {
+h1 {
     color:rgb(224, 41, 41);
 }
+h2 {
+    color: rgb(124, 236, 86);
+    text-shadow: 2px 2px white;
+}
 #userOptions {  
-    grid-row-start: 3;
     display: flex;
-    flex-flow: row-wrap;
-    align-items: center;
+    flex-flow: row wrap;
+    align-items: flex-end;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
+    margin-block: 2rem;
 }
 button {
     height: 10vh;
-    width: 17vw;
+    width: fit-content;
+    font-weight: 700;
+    font-size: x-large;
+    padding-inline: 4rem;
+}
+button:hover {
+    background-color: yellow;
+}
+#score{
+    justify-self: right;
+    margin: 2rem;
 }
 p {
     color: wheat;
+}
+#veridict {
+    color: fuchsia;
+    
 }
