@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, paper, scissors</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-    <h1>Play rock, paper, scissors</h1>
-    <h2>...or not, I always win!</h2>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <body class="container notification">
+      <div class= 'has-text-centered'>
+      <h1 class="title is-1">Play rock, paper, scissors</h1>
+    
+</div>
+<div class="section has-text-centered">
     <p id="veridict"></p>
-    <section id="score">
-    <p>You:</p>
-    <p id="yourscore"></p>
-    <p>Gorilla:</p>
-    <p id="gorillascore"></p>
-</section>
-    <div id="userOptions">
-        <button id="Rock">Rock</button>
-        <button id="Paper">Paper</button>
-        <button id="Scissors">Scissors</button>
+    <section id="score" >
+      <p class="title is-3">You:</p>
+      <p id="yourscore"></p>
+      <p class="is-3 title">Oponent:</p>
+      <p id="gorillascore"></p>
+    </section>
+</div>
+    <div id="userOptions" class="hero-foot is-centered buttons">
+      <button id="Rock" class="button  is-info ">Rock</button>
+      <button id="Paper" class="button  is-success">Paper</button>
+      <button id="Scissors" class="button  is-warning">Scissors
+      </button>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

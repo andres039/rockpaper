@@ -3,60 +3,45 @@
     padding: 0;
 }
 body {
-    line-height: 1.6;
-    display: grid;
-    background-image: url(background2.jpg);
-    background-repeat: no-repeat;
+    /*Display stuff*/
+   
+    /*Positioning stuff*/
+    /*Box Model*/
+    /* background-image: url(background2.jpg); */
     height: 100vh;
     width: 100vw;
-    background-size: contain;
-    background-position: center;
-    background-color: black;
+    background-color: black; 
+    /* Typography */
+    line-height: 1.6;
 }
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-self: center;
-    justify-content: center;
-    max-width: 40vw;
-    margin-block-end: 1rem;
-}
-h1 {
-    color:rgb(224, 41, 41);
-}
-h2 {
-    color: rgb(124, 236, 86);
-    text-shadow: 2px 2px white;
-}
-#userOptions {  
-    display: flex;
-    flex-flow: row wrap;
-    align-self: center;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 4rem;
-    margin-right: 4rem;
-}
-button {
-    height: 10vh;
-    width: fit-content;
-    font-weight: 700;
-    font-size: x-large;
-    padding-inline: 4rem;
-}
-button:hover {
-    background-color: yellow;
-}
-#score{
-    justify-self: right;
-    margin: 2rem;
-}
-p {
-    color: wheat;
-}
+/* header {
+    /* Display */
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* Positioning */
+    /* justify-self: center;
+    justify-content: center; */
+    /* Box model */
+  /*  max-width: 40vw;*/
+    
+
+
+
+
 #veridict {
-    justify-self: left;
+    /* justify-self: left; */
     color: fuchsia;
     margin: 6rem;
 
+}
+.buttons {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: center;
+    min-width: min-content;
+    margin-inline: auto;
+    padding: 0;
+}
+.mark {
+    border: solid blue 1px;
 }
