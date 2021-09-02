@@ -54,9 +54,9 @@ const oneRound = (player1, player2) => {
       yourscore.innerText = yourCounter
       gorillascore.innerText = computerCounter
       if (yourCounter === 5) {
-        document.getElementById('veridict').innerText = 'Congrats! You defeated this monkey!'
+        document.getElementById('veridict').innerText = 'Congrats! You Win!'
     } if (computerCounter === 5) {
-      document.getElementById('veridict').innerText = 'Once again, this monkey keeps wining!'
+      document.getElementById('veridict').innerText = 'Once again, AI is taking over!'
     }
   }
 
