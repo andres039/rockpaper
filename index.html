@@ -12,33 +12,34 @@
     />
   </head>
   <body class="container notification">
-      <div class= 'has-text-centered'>
-      <h1 class="title is-1">Play rock, paper, scissors</h1>
+      <div class= 'has-text-centered py-5'>
+      <h1 class="title is-2 py-4">Play rock, paper, scissors</h1>
     
 </div>
-<div class="section has-text-centered">
-  <div class="section ">
-    <p id="veridict" class='subtitle is-3 hero'></p>
+</div>
+<div id="userOptions" class="hero py-4 is-flex-direction-row is-centered buttons">
+  <button id="Rock" class="button  is-info ">Rock</button>
+  <button id="Paper" class="button  is-success">Paper</button>
+  <button id="Scissors" class="button  is-warning">Scissors
+  </button>
+</div>
+<div class="section has-text-centered py-4">
+  <div class="section py-6 ">
+    <p id="veridict" class='subtitle is-5 hero'></p>
   </div>
     <section id="score" >
-      <div class="section card">
+      <div class="section card py-2">
       <p class="title is-3">You:</p>
       <p id="yourscore" class='subtitle is-4 pt-4'></p>
-      <div class='yourchoice image is-96x96 container'></div>
+      <div class='yourchoice image is-48x48 container'></div>
     </div>
-    <div class="section card">
+    <div class="section card py-2">
       <p class="is-3 title">Oponent:</p>
       <p id="gorillascore" class='subtitle is-4 pt-4'></p>
-      <div class='computerchoice image is-96x96 container'></div>
+      <div class='computerchoice image is-48x48 container'></div>
     </div>
     </section>
 </div>
-    <div id="userOptions" class="hero-foot is-centered buttons">
-      <button id="Rock" class="button  is-info ">Rock</button>
-      <button id="Paper" class="button  is-success">Paper</button>
-      <button id="Scissors" class="button  is-warning">Scissors
-      </button>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
