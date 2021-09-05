@@ -1,9 +1,15 @@
-let yourscore = document.getElementById('yourscore')
-let gorillascore = document.getElementById('gorillascore')
+"use strict";
+const yourscore = document.getElementById('yourscore')
+const gorillascore = document.getElementById('gorillascore')
+const yourimage = document.createElement('img')
+const image = document.createElement('img')
+const yourChoice = document.querySelector('.yourchoice')
+yourChoice.appendChild(yourimage)
+const computerChoice = document.querySelector('.computerchoice')
+computerChoice.appendChild(image)
 let computerCounter = 0;
-let yourCounter = 4;
-let weapons = ['Rock', 'Paper', 'Scissors'];
-  
+let yourCounter = 0;
+let weapons = ['Rock', 'Paper', 'Scissors']; 
 let result;
 let buttons = document.querySelectorAll('button');
 
@@ -12,7 +18,9 @@ let buttons = document.querySelectorAll('button');
 buttons.forEach((button) =>
 button.addEventListener('click', (e) => {
   let player2 = weapons[Math.floor(Math.random() * 3)];
+  player2 === 'Rock' ? image.src = 'rock.png' : player2 === 'Paper' ? image.src = 'paper.png' : image.src = 'scissors.png'
   let player1 = e.target.id;
+  e.target.id === 'Rock' ? yourimage.src = 'rock.png' : e.target.id === 'Paper' ? yourimage.src = 'paper.png' : yourimage.src = 'scissors.png'
   oneRound(player1, player2);
 })
 );

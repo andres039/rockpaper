@@ -3,17 +3,13 @@
     padding: 0;
 }
 body {
- 
-    height: 100vh;
     width: 100vw;
-    background-color: black; 
- 
     line-height: 1.6;
 }
 
 #veridict {
     color: fuchsia;
-    margin: 6rem;
+    margin: auto;
 
 }
 .buttons {
